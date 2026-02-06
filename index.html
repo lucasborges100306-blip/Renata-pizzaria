@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Renata Pizzaria</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="img/logo pizzaria.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <img src="img/logo pizzaria.png" class="logo">
+  <h1>Renata Pizzaria</h1>
+  <p>Pedidos online • WhatsApp</p>
+</header>
+
+<main>
+
+<!-- 🍕 PIZZAS -->
+<section class="card">
+<h2>🍕 Pizzas</h2>
+
+<label>Tamanho *</label>
+<select id="tamanhoPizza" onchange="definirLimitePizza()">
+  <option value="">Selecione</option>
+  <option value="Pequena - R$ 37,00" data-max="2">Pequena (2 sabores)</option>
+  <option value="Média - R$ 50,00" data-max="2">Média (2 sabores)</option>
+  <option value="Grande - R$ 55,00" data-max="2">Grande (2 sabores)</option>
+  <option value="Família - R$ 65,00" data-max="3">Família (3 sabores)</option>
+</select>
+
+<label>Sabores *</label>
+<div class="sabores-grid pizza-sabores">
+  <label><input type="checkbox" value="Calabresa">Calabresa</label>
+  <label><input type="checkbox" value="Muçarela">Muçarela</label>
+  <label><input type="checkbox" value="Vegetariana">Vegetariana</label>
+  <label><input type="checkbox" value="Frango c/ Catupiry">Frango c/ Catupiry</label>
+  <label><input type="checkbox" value="Frango c/ Batata Palha">Frango c/ Batata Palha</label>
+  <label><input type="checkbox" value="Frango c/ Cheddar">Frango c/ Cheddar</label>
+  <label><input type="checkbox" value="Moda da Casa">Moda da Casa</label>
+  <label><input type="checkbox" value="Framilho">Framilho</label>
+  <label><input type="checkbox" value="Renata">Renata</label>
+  <label><input type="checkbox" value="Portuguesa">Portuguesa</label>
+  <label><input type="checkbox" value="Paulista">Paulista</label>
+  <label><input type="checkbox" value="Bacon">Bacon</label>
+  <label><input type="checkbox" value="Caipira">Caipira</label>
+  <label><input type="checkbox" value="Baiana">Baiana</label>
+  <label><input type="checkbox" value="Italiana">Italiana</label>
+  <label><input type="checkbox" value="Toscana">Toscana</label>
+  <label><input type="checkbox" value="Bauru">Bauru</label>
+  <label><input type="checkbox" value="Três Queijos">Três Queijos</label>
+  <label><input type="checkbox" value="Renis Mi">Renis Mi</label>
+  <label><input type="checkbox" value="4 Estações">4 Estações</label>
+  <label><input type="checkbox" value="Americana">Americana</label>
+  <label><input type="checkbox" value="Moda do Pizzaiolo">Moda do Pizzaiolo</label>
+  <label><input type="checkbox" value="Atum">Atum</label>
+  <label><input type="checkbox" value="Carne Seca">Carne Seca</label>
+  <label><input type="checkbox" value="Mineira">Mineira</label>
+  <label><input type="checkbox" value="Sertaneja">Sertaneja</label>
+  <label><input type="checkbox" value="Quatro Queijos">Quatro Queijos</label>
+  <label><input type="checkbox" value="Brasileira">Brasileira</label>
+  <label><input type="checkbox" value="Nordestina">Nordestina</label>
+  <label><input type="checkbox" value="Dois Queijos c/ Palmito">Dois Queijos c/ Palmito</label>
+  <label><input type="checkbox" value="Bambino">Bambino</label>
+  <label><input type="checkbox" value="Hambúrguer">Hambúrguer</label>
+</div>
+
+<label>Borda *</label>
+<select id="bordaPizza">
+  <option value="">Selecione a borda</option>
+  <option value="Sem borda">Sem borda</option>
+  <option value="Borda Catupiry">Catupiry</option>
+  <option value="Borda Cheddar">Cheddar</option>
+  <option value="Borda Muçarela">Muçarela</option>
+  <option value="Borda Meio a Meio">Meio a meio</option>
+</select>
+
+<label>Opções da pizza *</label>
+<div class="sabores-grid opcoes-pizza">
+  <label><input type="checkbox" value="Pizza completa">Pizza completa</label>
+  <label><input type="checkbox" value="Sem cebola">Sem cebola</label>
+  <label><input type="checkbox" value="Sem tomate">Sem tomate</label>
+  <label><input type="checkbox" value="Sem azeitona">Sem azeitona</label>
+</div>
+
+<button class="btn" onclick="adicionarPizza()">Adicionar Pizza</button>
+</section>
+
+<!-- 🍔 LANCHES -->
+<section class="card">
+<h2>🍔 Lanches</h2>
+<button class="btn-sec" onclick="addItem('X-Misto - R$ 10,00')">X-Misto — R$ 10,00</button>
+<button class="btn-sec" onclick="addItem('X-Dogão - R$ 13,00')">X-Dogão — R$ 13,00</button>
+<button class="btn-sec" onclick="addItem('X-Hambúrguer - R$ 14,00')">X-Hambúrguer — R$ 14,00</button>
+<button class="btn-sec" onclick="addItem('X-Salada - R$ 15,00')">X-Salada — R$ 15,00</button>
+<button class="btn-sec" onclick="addItem('X-3 Queijos - R$ 15,00')">X-3 Queijos — R$ 15,00</button>
+<button class="btn-sec" onclick="addItem('X-Egg - R$ 16,00')">X-Egg — R$ 16,00</button>
+<button class="btn-sec" onclick="addItem('X-Calabresa - R$ 17,00')">X-Calabresa — R$ 17,00</button>
+<button class="btn-sec" onclick="addItem('X-Frango - R$ 17,00')">X-Frango — R$ 17,00</button>
+<button class="btn-sec" onclick="addItem('X-Bacon - R$ 18,00')">X-Bacon — R$ 18,00</button>
+<button class="btn-sec" onclick="addItem('X-Moda da Casa - R$ 20,00')">X-Moda da Casa — R$ 20,00</button>
+<button class="btn-sec" onclick="addItem('X-Tudo - R$ 23,00')">X-Tudo — R$ 23,00</button>
+<button class="btn-sec" onclick="addItem('X-Explosão - R$ 23,00')">X-Explosão — R$ 23,00</button>
+<button class="btn-sec" onclick="addItem('X-Mega - R$ 25,00')">X-Mega — R$ 25,00</button>
+<button class="btn-sec" onclick="addItem('X-Bomba - R$ 25,00')">X-Bomba — R$ 25,00</button>
+</section>
+
+<!-- 🥤 AÇAÍ -->
+<section class="card">
+<h2>🥤 Açaí</h2>
+
+<p class="info">
+  ✔ Já acompanha: <strong>Leite condensado, Leite Ninho, Granola e Banana</strong>
+</p>
+
+<label>Tamanho *</label>
+<select id="acaiTamanho">
+  <option value="">Selecione</option>
+  <option value="Açaí 300ml - R$ 16,00">300ml — R$ 16,00</option>
+  <option value="Açaí 400ml - R$ 18,00">400ml — R$ 18,00</option>
+  <option value="Açaí 500ml - R$ 20,00">500ml — R$ 20,00</option>
+  <option value="Açaí Petisqueira - R$ 35,00">Petisqueira — R$ 35,00</option>
+</select>
+
+<label>Adicionais</label>
+<div class="sabores-grid acai-adicionais">
+  <label><input type="checkbox" value="Jujuba + R$ 1,00">Jujuba (+ R$ 1,00)</label>
+  <label><input type="checkbox" value="Paçoca + R$ 1,00">Paçoca (+ R$ 1,00)</label>
+  <label><input type="checkbox" value="Confete + R$ 1,00">Confete (+ R$ 1,00)</label>
+  <label><input type="checkbox" value="Amendoim Triturado + R$ 1,00">Amendoim triturado (+ R$ 1,00)</label>
+  <label><input type="checkbox" value="Cereja + R$ 1,00">Cereja (+ R$ 1,00)</label>
+  <label><input type="checkbox" value="Gotas de Chocolate + R$ 1,00">Gotas de chocolate (+ R$ 1,00)</label>
+  <label><input type="checkbox" value="Morango + R$ 3,00">Morango (+ R$ 3,00)</label>
+  <label><input type="checkbox" value="Nutella + R$ 4,00">Nutella (+ R$ 4,00)</label>
+</div>
+
+<button class="btn" onclick="adicionarAcai()">Adicionar Açaí</button>
+</section>
+
+
+<!-- 🍨 SORVETE -->
+<section class="card">
+<h2>🍨 Sorvete</h2>
+
+<label>Valor *</label>
+<select id="sorveteValor">
+  <option value="">Selecione</option>
+  <option value="Sorvete R$ 20,00">R$ 20,00</option>
+  <option value="Sorvete R$ 30,00">R$ 30,00</option>
+  <option value="Sorvete R$ 40,00">R$ 40,00</option>
+  <option value="Sorvete 1kg - R$ 50,00">1kg — R$ 50,00</option>
+</select>
+
+<label>Sabor *</label>
+<div class="sabores-grid sorvete-sabores">
+  <label><input type="checkbox" value="Ninho Trufado">Ninho Trufado</label>
+  <label><input type="checkbox" value="Chocolate">Chocolate</label>
+  <label><input type="checkbox" value="Morango">Morango</label>
+  <label><input type="checkbox" value="Abacaxi">Abacaxi</label>
+  <label><input type="checkbox" value="Maracujá">Maracujá</label>
+  <label><input type="checkbox" value="Abacaxi ao Vinho">Abacaxi ao Vinho</label>
+  <label><input type="checkbox" value="Flocos">Flocos</label>
+  <label><input type="checkbox" value="Leite Condensado">Leite Condensado</label>
+  <label><input type="checkbox" value="Céu Azul">Céu Azul</label>
+  <label><input type="checkbox" value="Salada de Frutas">Salada de Frutas</label>
+  <label><input type="checkbox" value="Torta de Limão">Torta de Limão</label>
+</div>
+
+<label>COBERTURAS</label>
+<div class="sabores-grid sorvete-coberturas">
+  <label><input type="checkbox" value="Morango">Morango</label>
+  <label><input type="checkbox" value="Chocolate">Chocolate</label>
+  <label><input type="checkbox" value="Caramelo">Caramelo</label>
+  <label><input type="checkbox" value="Caramelo Toffee">Caramelo Toffee</label>
+  <label><input type="checkbox" value="Limão">Limão</label>
+  <label><input type="checkbox" value="Açaí">Açaí</label>
+  <label><input type="checkbox" value="Leite Condensado">Leite Condensado</label>
+  <label><input type="checkbox" value="Calda Quente">Calda Quente</label>
+</div>
+
+<button class="btn" onclick="adicionarSorvete()">Adicionar Sorvete</button>
+</section>
+
+
+
+<!-- 🥤 BEBIDAS -->
+<section class="card">
+<h2>🥤 Bebidas</h2>
+<button class="btn-sec" onclick="addItem('Pepsi 1L - R$ 8,00')">Pepsi 1L — R$ 8,00</button>
+<button class="btn-sec" onclick="addItem('Kuat 1L - R$ 8,00')">Kuat 1L — R$ 8,00</button>
+<button class="btn-sec" onclick="addItem('Fanta 1L - R$ 8,00')">Fanta 1L — R$ 8,00</button>
+<button class="btn-sec" onclick="addItem('Guaraná Antarctica 1L - R$ 8,00')">Guaraná 1L — R$ 8,00</button>
+<button class="btn-sec" onclick="addItem('Coca-Cola 1L - R$ 10,00')">Coca-Cola 1L — R$ 10,00</button>
+<button class="btn-sec" onclick="addItem('Coca-Cola Zero 1L - R$ 10,00')">Coca Zero 1L — R$ 10,00</button>
+
+<button class="btn-sec" onclick="addItem('Kuat 2L - R$ 12,00')">Kuat 2L — R$ 12,00</button>
+<button class="btn-sec" onclick="addItem('Pepsi 2L - R$ 12,00')">Pepsi 2L — R$ 12,00</button>
+<button class="btn-sec" onclick="addItem('Fanta Uva 2L - R$ 12,00')">Fanta Uva 2L — R$ 12,00</button>
+<button class="btn-sec" onclick="addItem('Fanta Laranja 2L - R$ 12,00')">Fanta Laranja 2L — R$ 12,00</button>
+<button class="btn-sec" onclick="addItem('Sprite 2L - R$ 12,00')">Sprite 2L — R$ 12,00</button>
+<button class="btn-sec" onclick="addItem('Coca-Cola 2L - R$ 15,00')">Coca-Cola 2L — R$ 15,00</button>
+<button class="btn-sec" onclick="addItem('Coca-Cola Zero 2L - R$ 15,00')">Coca Zero 2L — R$ 15,00</button>
+<button class="btn-sec" onclick="addItem('Coca-Cola 2,5L - R$ 16,00')">Coca-Cola 2,5L — R$ 16,00</button>
+
+<button class="btn-sec" onclick="addItem('Del Valle Uva - R$ 10,00')">Del Valle Uva — R$ 10,00</button>
+<button class="btn-sec" onclick="addItem('Del Valle Laranja - R$ 10,00')">Del Valle Laranja — R$ 10,00</button>
+</section>
+
+<!-- 📍 ENTREGA -->
+<section class="card">
+<h2>📍 Entrega ou Retirada</h2>
+<label><input type="radio" name="tipoEntrega" value="Entrega" onchange="mostrarEndereco()"> Quero entrega</label>
+<label><input type="radio" name="tipoEntrega" value="Retirada" onchange="mostrarEndereco()"> Vou retirar</label>
+
+<div id="enderecoBox" style="display:none;margin-top:10px;">
+  <label>Endereço</label>
+  <input id="enderecoCliente" type="text" placeholder="Rua, número, bairro">
+</div>
+</section>
+<!-- 💳 FORMA DE PAGAMENTO -->
+<section class="card">
+  <h2>💳 Forma de Pagamento *</h2>
+
+  <label>
+    <input type="radio" name="pagamento" value="Pix">
+    Pix
+  </label>
+
+  <label>
+    <input type="radio" name="pagamento" value="Dinheiro">
+    Dinheiro
+  </label>
+
+  <label>
+    <input type="radio" name="pagamento" value="Cartão">
+    Cartão
+  </label>
+</section>
+
+<section class="finalizar">
+<button class="btn-final" onclick="finalizarPedido()">Finalizar pedido no WhatsApp</button>
+</section>
+
+</main>
+
+<footer>
+<p>Valores sujeitos à confirmação no WhatsApp</p>
+</footer>
+
+<div id="toast" class="toast">✔ Item adicionado</div>
+
+<script src="script.js"></script>
+</body>
+</html>
