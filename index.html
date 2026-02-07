@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -24,46 +25,49 @@
 <label>Tamanho *</label>
 <select id="tamanhoPizza" onchange="definirLimitePizza()">
   <option value="">Selecione</option>
-  <option value="Pequena - R$ 37,00" data-max="2">Pequena (2 sabores)</option>
-  <option value="Média - R$ 50,00" data-max="2">Média (2 sabores)</option>
-  <option value="Grande - R$ 55,00" data-max="2">Grande (2 sabores)</option>
-  <option value="Família - R$ 65,00" data-max="3">Família (3 sabores)</option>
+  <option value="Pequena - R$ 37,00" data-max="2">Pequena (2 sabores) R$ 37,00</option>
+<option value="Média - R$ 50,00" data-max="2">Média (2 sabores) R$ 50,00</option>
+<option value="Grande - R$ 55,00" data-max="2">Grande (2 sabores) R$ 55,00</option>
+<option value="Família - R$ 65,00" data-max="3">Família (3 sabores) R$ 65,00</option>
+>
 </select>
 
 <label>Sabores *</label>
 <div class="sabores-grid pizza-sabores">
-  <label><input type="checkbox" value="Calabresa">Calabresa</label>
-  <label><input type="checkbox" value="Muçarela">Muçarela</label>
-  <label><input type="checkbox" value="Vegetariana">Vegetariana</label>
-  <label><input type="checkbox" value="Frango c/ Catupiry">Frango c/ Catupiry</label>
-  <label><input type="checkbox" value="Frango c/ Batata Palha">Frango c/ Batata Palha</label>
-  <label><input type="checkbox" value="Frango c/ Cheddar">Frango c/ Cheddar</label>
-  <label><input type="checkbox" value="Moda da Casa">Moda da Casa</label>
-  <label><input type="checkbox" value="Framilho">Framilho</label>
-  <label><input type="checkbox" value="Renata">Renata</label>
-  <label><input type="checkbox" value="Portuguesa">Portuguesa</label>
-  <label><input type="checkbox" value="Paulista">Paulista</label>
-  <label><input type="checkbox" value="Bacon">Bacon</label>
-  <label><input type="checkbox" value="Caipira">Caipira</label>
-  <label><input type="checkbox" value="Baiana">Baiana</label>
-  <label><input type="checkbox" value="Italiana">Italiana</label>
-  <label><input type="checkbox" value="Toscana">Toscana</label>
-  <label><input type="checkbox" value="Bauru">Bauru</label>
-  <label><input type="checkbox" value="Três Queijos">Três Queijos</label>
-  <label><input type="checkbox" value="Renis Mi">Renis Mi</label>
-  <label><input type="checkbox" value="4 Estações">4 Estações</label>
-  <label><input type="checkbox" value="Americana">Americana</label>
-  <label><input type="checkbox" value="Moda do Pizzaiolo">Moda do Pizzaiolo</label>
-  <label><input type="checkbox" value="Atum">Atum</label>
-  <label><input type="checkbox" value="Carne Seca">Carne Seca</label>
-  <label><input type="checkbox" value="Mineira">Mineira</label>
-  <label><input type="checkbox" value="Sertaneja">Sertaneja</label>
-  <label><input type="checkbox" value="Quatro Queijos">Quatro Queijos</label>
-  <label><input type="checkbox" value="Brasileira">Brasileira</label>
-  <label><input type="checkbox" value="Nordestina">Nordestina</label>
-  <label><input type="checkbox" value="Dois Queijos c/ Palmito">Dois Queijos c/ Palmito</label>
-  <label><input type="checkbox" value="Bambino">Bambino</label>
-  <label><input type="checkbox" value="Hambúrguer">Hambúrguer</label>
+
+<label><input type="checkbox" value="Calabresa"><strong>Calabresa</strong><br><small>Molho, muçarela, calabresa e orégano</small></label>
+<label><input type="checkbox" value="Muçarela"><strong>Muçarela</strong><br><small>Molho, muçarela, tomate, azeitona e orégano</small></label>
+<label><input type="checkbox" value="Vegetariana"><strong>Vegetariana</strong><br><small>Molho, palmito, milho, ervilha, cebola e azeitona</small></label>
+<label><input type="checkbox" value="Frango c/ Catupiry"><strong>Frango c/ Catupiry</strong><br><small>Molho, muçarela, frango e catupiry</small></label>
+<label><input type="checkbox" value="Frango c/ Batata Palha"><strong>Frango c/ Batata Palha</strong><br><small>Molho, muçarela, frango, milho e batata palha</small></label>
+<label><input type="checkbox" value="Frango c/ Cheddar"><strong>Frango c/ Cheddar</strong><br><small>Molho, muçarela, frango e cheddar</small></label>
+<label><input type="checkbox" value="Moda da Casa"><strong>Moda da Casa</strong><br><small>Presunto,ú calabresa, muçarela, tomate e azeitona</small></label>
+<label><input type="checkbox" value="Framilho"><strong>Framilho</strong><br><small>Frango, milho, catupiry e muçarela</small></label>
+<label><input type="checkbox" value="Renata"><strong>Renata</strong><br><small>Calabresa, bacon, cebola, muçarela e azeitona</small></label>
+<label><input type="checkbox" value="Portuguesa"><strong>Portuguesa</strong><br><small>Presunto, ovo, milho, cebola e muçarela</small></label>
+<label><input type="checkbox" value="Paulista"><strong>Paulista</strong><br><small>Calabresa, catupiry e muçarela</small></label>
+<label><input type="checkbox" value="Bacon"><strong>Bacon</strong><br><small>Bacon, muçarela e azeitona</small></label>
+<label><input type="checkbox" value="Caipira"><strong>Caipira</strong><br><small>Frango, milho e muçarela</small></label>
+<label><input type="checkbox" value="Baiana"><strong>Baiana</strong><br><small>Calabresa, cebola, tomate, pimenta e muçarela</small></label>
+<label><input type="checkbox" value="Italiana"><strong>Italiana</strong><br><small>Presunto, frango, catupiry e muçarela</small></label>
+<label><input type="checkbox" value="Toscana"><strong>Toscana</strong><br><small>Calabresa ralada, cebola e muçarela</small></label>
+<label><input type="checkbox" value="Bauru"><strong>Bauru</strong><br><small>Presunto, tomate e muçarela</small></label>
+<label><input type="checkbox" value="Três Queijos"><strong>Três Queijos</strong><br><small>Muçarela, catupiry e provolone</small></label>
+<label><input type="checkbox" value="Renis Mi"><strong>Renis Mi</strong><br><small>Presunto, bacon, muçarela e azeitona</small></label>
+<label><input type="checkbox" value="4 Estações"><strong>4 Estações</strong><br><small>Presunto, calabresa, milho, tomate e muçarela</small></label>
+<label><input type="checkbox" value="Americana"><strong>Americana</strong><br><small>Bacon, palmito, tomate, cebola e muçarela</small></label>
+<label><input type="checkbox" value="Moda do Pizzaiolo"><strong>Moda do Pizzaiolo</strong><br><small>Frango, calabresa, cheddar, catupiry e muçarela</small></label>
+<label><input type="checkbox" value="Atum"><strong>Atum</strong><br><small>Atum, cebola e muçarela</small></label>
+<label><input type="checkbox" value="Carne Seca"><strong>Carne Seca</strong><br><small>Carne seca e muçarela</small></label>
+<label><input type="checkbox" value="Mineira"><strong>Mineira</strong><br><small>Carne, milho e muçarela</small></label>
+<label><input type="checkbox" value="Sertaneja"><strong>Sertaneja</strong><br><small>Carne, catupiry e muçarela</small></label>
+<label><input type="checkbox" value="Quatro Queijos"><strong>Quatro Queijos</strong><br><small>Muçarela, catupiry, cheddar e provolone</small></label>
+<label><input type="checkbox" value="Brasileira"><strong>Brasileira</strong><br><small>Frango, cheddar, batata palha e milho</small></label>
+<label><input type="checkbox" value="Nordestina"><strong>Nordestina</strong><br><small>Carne, cebola, tomate, milho e pimentão</small></label>
+<label><input type="checkbox" value="Dois Queijos c/ Palmito"><strong>Dois Queijos c/ Palmito</strong><br><small>Muçarela, catupiry e palmito</small></label>
+<label><input type="checkbox" value="Bambino"><strong>Bambino</strong><br><small>Frango, milho, tomate e muçarela</small></label>
+<label><input type="checkbox" value="Hambúrguer"><strong>Hambúrguer</strong><br><small>Hambúrguer, presunto, tomate e muçarela</small></label>
+
 </div>
 
 <label>Borda *</label>
@@ -90,21 +94,29 @@
 <!-- 🍔 LANCHES -->
 <section class="card">
 <h2>🍔 Lanches</h2>
-<button class="btn-sec" onclick="addItem('X-Misto - R$ 10,00')">X-Misto — R$ 10,00</button>
-<button class="btn-sec" onclick="addItem('X-Dogão - R$ 13,00')">X-Dogão — R$ 13,00</button>
-<button class="btn-sec" onclick="addItem('X-Hambúrguer - R$ 14,00')">X-Hambúrguer — R$ 14,00</button>
-<button class="btn-sec" onclick="addItem('X-Salada - R$ 15,00')">X-Salada — R$ 15,00</button>
-<button class="btn-sec" onclick="addItem('X-3 Queijos - R$ 15,00')">X-3 Queijos — R$ 15,00</button>
-<button class="btn-sec" onclick="addItem('X-Egg - R$ 16,00')">X-Egg — R$ 16,00</button>
-<button class="btn-sec" onclick="addItem('X-Calabresa - R$ 17,00')">X-Calabresa — R$ 17,00</button>
-<button class="btn-sec" onclick="addItem('X-Frango - R$ 17,00')">X-Frango — R$ 17,00</button>
-<button class="btn-sec" onclick="addItem('X-Bacon - R$ 18,00')">X-Bacon — R$ 18,00</button>
-<button class="btn-sec" onclick="addItem('X-Moda da Casa - R$ 20,00')">X-Moda da Casa — R$ 20,00</button>
-<button class="btn-sec" onclick="addItem('X-Tudo - R$ 23,00')">X-Tudo — R$ 23,00</button>
-<button class="btn-sec" onclick="addItem('X-Explosão - R$ 23,00')">X-Explosão — R$ 23,00</button>
-<button class="btn-sec" onclick="addItem('X-Mega - R$ 25,00')">X-Mega — R$ 25,00</button>
-<button class="btn-sec" onclick="addItem('X-Bomba - R$ 25,00')">X-Bomba — R$ 25,00</button>
+
+<button class="btn-sec" onclick="addItem('X-Misto - R$ 10,00')"><strong>X-Misto — R$ 10,00</strong><br><small>Pão, presunto, muçarela e molho</small></button>
+<button class="btn-sec" onclick="addItem('X-Dogão - R$ 13,00')"><strong>X-Dogão — R$ 13,00</strong><br><small>Pão, salsicha, muçarela, batata palha e molho</small></button>
+<button class="btn-sec" onclick="addItem('X-Hambúrguer - R$ 14,00')"><strong>X-Hambúrguer — R$ 14,00</strong><br><small>Pão, hambúrguer, muçarela e molho</small></button>
+<button class="btn-sec" onclick="addItem('X-Salada - R$ 15,00')"><strong>X-Salada — R$ 15,00</strong><br><small>Pão, hambúrguer, alface, tomate e muçarela</small></button>
+<button class="btn-sec" onclick="addItem('X-3 Queijos - R$ 15,00')"><strong>X-3 Queijos — R$ 15,00</strong><br><small>Muçarela, cheddar, catupiry e pão</small></button>
+<button class="btn-sec" onclick="addItem('X-Egg - R$ 16,00')"><strong>X-Egg — R$ 16,00</strong><br><small>Pão, hambúrguer, ovo e muçarela</small></button>
+<button class="btn-sec" onclick="addItem('X-Calabresa - R$ 17,00')"><strong>X-Calabresa — R$ 17,00</strong><br><small>Pão, calabresa, muçarela e molho</small></button>
+<button class="btn-sec" onclick="addItem('X-Frango - R$ 17,00')"><strong>X-Frango — R$ 17,00</strong><br><small>Pão, frango, muçarela e molho</small></button>
+<button class="btn-sec" onclick="addItem('X-Bacon - R$ 18,00')"><strong>X-Bacon — R$ 18,00</strong><br><small>Pão, hambúrguer, bacon e muçarela</small></button>
+<button class="btn-sec" onclick="addItem('X-Moda da Casa - R$ 20,00')"><strong>X-Moda da Casa — R$ 20,00</strong><br><small>Pão, hambúrguer, bacon, presunto e muçarela</small></button>
+<button class="btn-sec" onclick="addItem('X-Tudo - R$ 23,00')"><strong>X-Tudo — R$ 23,00</strong><br><small>Pão, hambúrguer, bacon, ovo, presunto e muçarela</small></button>
+<button class="btn-sec" onclick="addItem('X-Explosão - R$ 23,00')"><strong>X-Explosão — R$ 23,00</strong><br><small>Pão, dupla carne, bacon e queijo</small></button>
+<button class="btn-sec" onclick="addItem('X-Mega - R$ 25,00')"><strong>X-Mega — R$ 25,00</strong><br><small>Pão, dupla carne, bacon, ovo e muçarela</small></button>
+<button class="btn-sec" onclick="addItem('X-Bomba - R$ 25,00')"><strong>X-Bomba — R$ 25,00</strong><br><small>Pão, carne, frango, bacon e queijo</small></button>
+
 </section>
+
+<!-- TODO O RESTO DO SITE (AÇAÍ, SORVETE, BEBIDAS, ENTREGA, PAGAMENTO) PERMANECE IGUAL AO SEU -->
+
+<script src="script.js"></script>
+</body>
+</html>
 
 <!-- 🥤 AÇAÍ -->
 <section class="card">
@@ -253,3 +265,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
